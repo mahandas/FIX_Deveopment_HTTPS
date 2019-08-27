@@ -195,12 +195,6 @@ public class FXClient {
 	class JVMShutdownHook extends Thread {
 		public void run() {
 			System.out.println("Exit process ... ");
-			//			try {
-			//				connection.close();
-			//			} catch (JMSException e) {
-			//				LOG.error("Error while closing AcitveMQ connection");
-			//				e.printStackTrace();
-			//			}
 			initiator.stop();
 		}
 	}
